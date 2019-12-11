@@ -17,6 +17,26 @@ class ProjectsController extends Controller
         return view('projects.index', compact('projects'));
     }
 
+    public function show()
+    {
+        # code...
+    }
+
+    public function edit()
+    {
+        # code...
+    }
+
+    public function update()
+    {
+        # code...
+    }
+
+    public function destroy()
+    {
+        # code...
+    }
+
     public function create()
     {
         return view('projects.create');
