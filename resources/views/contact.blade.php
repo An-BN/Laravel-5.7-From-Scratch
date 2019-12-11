@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<h1>Contact Form</h1>
-</body>
-</html>
+@extends('layout')
+
+@section('title', 'Contact Us')
+    {{-- Contact Us
+@endsection --}}
+
+@section('content')
+    <h1>Contact Form</h1>
+@endsection
