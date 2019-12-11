@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b2a28830-be1a-4429-997b-6ffdc075bbf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +134,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -157,11 +164,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576069212354</updated>
-      <workItem from="1576069214258" duration="2436000" />
+      <workItem from="1576069214258" duration="3348000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="385" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1576077525578">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="385" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1280.777@0.23.1280.777" timestamp="1576077525578" />
+    <state width="1238" height="129" key="GridCell.Tab.0.bottom" timestamp="1576077556748">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="129" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576077556748" />
+    <state width="1238" height="129" key="GridCell.Tab.0.center" timestamp="1576077556747">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="129" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576077556747" />
+    <state width="1238" height="129" key="GridCell.Tab.0.left" timestamp="1576077556747">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="129" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576077556747" />
+    <state width="1238" height="129" key="GridCell.Tab.0.right" timestamp="1576077556748">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="129" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576077556748" />
   </component>
 </project>
