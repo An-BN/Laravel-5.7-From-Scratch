@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Project;
 
 use Illuminate\Http\Request;
+use Illuminate\Filesystem\Filesystem;
+
 
 class ProjectsController extends Controller
 {
@@ -54,6 +56,9 @@ class ProjectsController extends Controller
 
     public function show(Project $project)
     {
+        // public function show(Filesystem $file)
+        // dd($file);
+        $filesystem = app('Illuminate\Filesystem\Filesystem');
         return view('projects.show', compact('project'));
     }
 

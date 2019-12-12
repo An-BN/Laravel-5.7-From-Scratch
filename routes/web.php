@@ -22,7 +22,15 @@
  */
 
 
+// // app()->singleton('App\Example', function () {
+// app()->singleton('example', function () {
+//     // dd('called');
+//     return new \App\Example;
+// });
+
 Route::get('/', function () {
+    dd(app('App\Example'));
+
     return view('welcome');
 });
 
@@ -32,5 +40,8 @@ Route::post('/projects/{project}/tasks', 'ProjectTasksController@store');
 //Route::patch('tasks/{task}', 'ProjectTasksController@update');
 Route::post('/completed-tasks/{task}', 'CompletedTasksController@store');
 Route::delete('/completed-tasks/{task}', 'CompletedTasksController@destroy');
+
+
+
 
 
