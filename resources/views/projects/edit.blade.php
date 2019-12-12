@@ -28,6 +28,9 @@
                 </div>
             </div>
         </div>
+
+        @include ('errors')
+
     </form>
 
     <form method="POST" action="/projects/{{ $project->id }}">
