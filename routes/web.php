@@ -1,7 +1,7 @@
 <?php
 
 
-use App\Repositories\UserRepository;
+use App\Services\Twitter;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,10 +26,14 @@ use App\Repositories\UserRepository;
 
 
 // Route::get('/', function (Twitter $twitter) {
-Route::get('/', function (UserRepository $user) {
+//Route::get('/', function (UserRepository $user) {
+//Route::get('/', function (Twitter $twitter) {
+
     // dd(app('foo'));
-    // dd($twitter);
-    dd($user);
+//    dd($twitter);
+//    dd($user);
+
+Route::get('/', function () {
     return view('welcome');
 });
 
@@ -44,3 +48,7 @@ Route::delete('/completed-tasks/{task}', 'CompletedTasksController@destroy');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
