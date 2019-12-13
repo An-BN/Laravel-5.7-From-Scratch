@@ -13,6 +13,9 @@ class ProjectCreated extends Mailable
      *
      * @return void
      */
+
+    public $foo = 'bar';
+
     public function __construct($project)
     {
         $this->project = $project;
