@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Project;
 
 use Illuminate\Http\Request;
-use Illuminate\Filesystem\Filesystem;
+//use Illuminate\Filesystem\Filesystem;
+use App\Mail\ProjectCreated;
+
 
 
 class ProjectsController extends Controller
@@ -15,6 +17,8 @@ class ProjectsController extends Controller
         $this->middleware('auth');
         // $this->middleware('auth')->only();
         // $this->middleware('auth')->except();
+        // $this->middleware('can:update,project')->except(['index']);
+
     }
 
 
@@ -26,6 +30,14 @@ class ProjectsController extends Controller
         // auth()->guest()
         // $projects = Project::all();
         $projects = Project::where('owner_id', auth()->id())->get();
+
+        // $projects = Project::where('owner_id', auth()->id())->take(2)->get();
+        // dump($projects);
+        // cache()->rememberForever('stats', function () {
+        //     return ['lesson' => 1300, 'hours' => 50000, 'series' => 100];
+        // });
+        // $stats = cache()->get('stats');
+        // dump($stats);
 
         return view('projects.index', compact('projects'));
     }
@@ -39,6 +51,14 @@ class ProjectsController extends Controller
 
     public function store()
     {
+
+        // Project::create(
+        //     request()->validate([
+        //         'title' => ['required', 'min:3', 'max:255'],
+        //         'description' => 'required|min:3'
+        //     ]) + ['owner_id' => auth()->id()]
+        // );
+
         $attributes = request()->validate([
             'title' => ['required', 'min:3', 'max:255'],
             'description' => 'required|min:3'
@@ -46,7 +66,11 @@ class ProjectsController extends Controller
 
         $attributes['owner_id'] = auth()->id();
 
-        Project::create($attributes);
+        $project = Project::create($attributes);
+
+        \Mail::to('kantchan.zxc@gmail.com')->send(
+            new ProjectCreated($project)
+        );
 
         return redirect('/projects');
     }
