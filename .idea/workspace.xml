@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a28830-be1a-4429-997b-6ffdc075bbf0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ProjectCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ProjectCreated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mail/project-created.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mail/project-created.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +173,7 @@
       <workItem from="1576167810282" duration="178000" />
       <workItem from="1576168012802" duration="2198000" />
       <workItem from="1576170981380" duration="8262000" />
-      <workItem from="1576206625493" duration="7535000" />
+      <workItem from="1576206625493" duration="8607000" />
     </task>
     <servers />
   </component>
@@ -226,9 +225,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="317" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1576206625021" />
-    <state x="298" y="173" width="683" height="476" key="find.popup" timestamp="1576226106181">
+    <state x="298" y="173" width="683" height="476" key="find.popup" timestamp="1576226907485">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="298" y="173" width="683" height="476" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1576226106181" />
+    <state x="298" y="173" width="683" height="476" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1576226907485" />
   </component>
 </project>
