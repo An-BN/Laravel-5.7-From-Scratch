@@ -15,7 +15,7 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->BigInteger('owner_id')->unsigned()->index();
+            $table->unsignedInteger('owner_id')->unsigned()->index();
             $table->string('title');
             $table->text('description');
             $table->timestamps();

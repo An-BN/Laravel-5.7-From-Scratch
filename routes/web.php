@@ -37,17 +37,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('projects', 'ProjectsController');
+//Route::resource('projects', 'ProjectsController')->middleware('can:update,project');
+Route::get('/projects/create', 'ProjectsController@create')->middleware('can:create,project');
 
 Route::post('/projects/{project}/tasks', 'ProjectTasksController@store');
 //Route::patch('tasks/{task}', 'ProjectTasksController@update');
 Route::post('/completed-tasks/{task}', 'CompletedTasksController@store');
 Route::delete('/completed-tasks/{task}', 'CompletedTasksController@destroy');
-
-
-
-
-
 
 Auth::routes();
 
